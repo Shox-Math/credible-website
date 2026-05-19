@@ -24,11 +24,17 @@
     stroke-linejoin="round"
   />
 
-  <path
-    d="M91 245c-35 34-28 92 37 104"
-    fill="none"
-    stroke="#06437E"
-    stroke-width="34"
-    stroke-linecap="round"
-  />
+<path
+  d="M88 260
+     C58 330, 118 405, 205 388
+     C165 345, 150 305, 168 255"
+  fill="none"
+  stroke="url(#g1)"
+  stroke-width="34"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+/>
+
+  
 </svg>
+
