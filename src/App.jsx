@@ -1220,7 +1220,7 @@ export default function App() {
             <div className="logo">UP</div>
             <div>
               <div className="brand-name">Credible</div>
-              <div className="brand-sub">Free student finance app</div>
+              <div className="brand-sub">Trust. Integrity. Clarity.</div>
             </div>
           </div>
 
