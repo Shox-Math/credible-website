@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-
+import logo from "./assets/credible-logo.svg";
 const flagUrl = (code) => `https://flagcdn.com/w80/${code}.png`;
 
 export default function App() {
