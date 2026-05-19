@@ -14,7 +14,7 @@ export default function App() {
   const [messages, setMessages] = useState([
     {
       role: "ai",
-      text: "Hi! I’m UniPay AI. Ask me about tuition deadlines, transfer routes, budgeting, credit building, rent pressure, or payment documents.",
+      text: "Hi! I’m Credible AI. Ask me about tuition deadlines, transfer routes, budgeting, credit building, rent pressure, or payment documents.",
     },
   ]);
 
@@ -124,7 +124,7 @@ export default function App() {
       nav: "Tuition",
       title: "Tuition command center",
       headline: "Your tuition plan is ready. One receipt still needs attention.",
-      text: "UniPay checks your invoice, family transfer, school deadline, and proof of payment so you know exactly what is finished.",
+      text: "Credible checks your invoice, family transfer, school deadline, and proof of payment so you know exactly what is finished.",
       kpis: [
         ["Tuition due", "$28,500"],
         ["Deadline", "12 days"],
@@ -137,7 +137,7 @@ export default function App() {
       nav: "Transfer",
       title: "Transfer route check",
       headline: "Compare routes before your family sends money.",
-      text: "UniPay helps students compare estimated cost, speed, documentation, and deadline safety before choosing a transfer method.",
+      text: "Credible helps students compare estimated cost, speed, documentation, and deadline safety before choosing a transfer method.",
       kpis: [
         ["Amount", "$8,000"],
         ["Avoidable cost", "$322"],
@@ -150,7 +150,7 @@ export default function App() {
       nav: "Budget",
       title: "Campus budget safety",
       headline: "Your rent is safe, but food spending is rising.",
-      text: "UniPay combines rent, food, transportation, tuition, and emergency savings into one student-friendly monthly view.",
+      text: "Credible combines rent, food, transportation, tuition, and emergency savings into one student-friendly monthly view.",
       kpis: [
         ["Budget safety", "84%"],
         ["Emergency fund", "$2,800"],
@@ -163,7 +163,7 @@ export default function App() {
       nav: "Credit",
       title: "Credit builder",
       headline: "Your credit habit is strong. Keep utilization below 30%.",
-      text: "UniPay explains U.S. credit rules in simple language and gives reminders before students hurt their credit history.",
+      text: "Credible explains U.S. credit rules in simple language and gives reminders before students hurt their credit history.",
       kpis: [
         ["Credit habit", "92%"],
         ["Utilization", "28%"],
@@ -195,7 +195,7 @@ export default function App() {
     const q = question.toLowerCase();
 
     if (q.includes("credit") || q.includes("score") || q.includes("fico")) {
-      return "To build credit in the U.S., focus on three things: pay on time, keep credit utilization below 30%, and avoid applying for too many cards at once. UniPay can track reminders and explain which actions may help your profile.";
+      return "To build credit in the U.S., focus on three things: pay on time, keep credit utilization below 30%, and avoid applying for too many cards at once. Credible can track reminders and explain which actions may help your profile.";
     }
 
     if (q.includes("tuition") || q.includes("installment") || q.includes("school")) {
@@ -203,7 +203,7 @@ export default function App() {
     }
 
     if (q.includes("delay") || q.includes("late") || q.includes("missing")) {
-      return "If a transfer is delayed, contact the school billing office early, save the bank confirmation, upload the proof of payment, and ask whether they can place a temporary note on your account. UniPay would flag this as a deadline-risk case.";
+      return "If a transfer is delayed, contact the school billing office early, save the bank confirmation, upload the proof of payment, and ask whether they can place a temporary note on your account. Credible would flag this as a deadline-risk case.";
     }
 
     if (q.includes("transfer") || q.includes("route") || q.includes("send") || q.includes("wire")) {
@@ -211,7 +211,7 @@ export default function App() {
     }
 
     if (q.includes("rent") || q.includes("apartment") || q.includes("lease")) {
-      return "For rent, a safer range is usually below 35–40% of your monthly budget. If rent is higher, UniPay would recommend protecting an emergency fund first and reducing flexible spending like food delivery or subscriptions.";
+      return "For rent, a safer range is usually below 35–40% of your monthly budget. If rent is higher, Credible would recommend protecting an emergency fund first and reducing flexible spending like food delivery or subscriptions.";
     }
 
     if (q.includes("document") || q.includes("receipt") || q.includes("invoice") || q.includes("proof")) {
@@ -219,14 +219,14 @@ export default function App() {
     }
 
     if (q.includes("budget") || q.includes("saving") || q.includes("spend") || q.includes("food")) {
-      return "Start with fixed costs first: tuition, rent, phone, insurance, transportation, and emergency savings. Then set a weekly limit for food and lifestyle spending. UniPay can flag risky patterns before the month gets out of control.";
+      return "Start with fixed costs first: tuition, rent, phone, insurance, transportation, and emergency savings. Then set a weekly limit for food and lifestyle spending. Credible can flag risky patterns before the month gets out of control.";
     }
 
     if (q.includes("emergency")) {
       return "For international students, a practical emergency fund is usually 1–3 months of essential costs. Start with rent plus food plus phone plus transportation, then grow it gradually before taking on extra risk.";
     }
 
-    return "This question may need a human advisor because it depends on your school, payment provider, document status, and deadline. UniPay would collect those details first, then route you to support with your tuition, transfer, or document context already organized.";
+    return "This question may need a human advisor because it depends on your school, payment provider, document status, and deadline. Credible would collect those details first, then route you to support with your tuition, transfer, or document context already organized.";
   }
 
   function sendMessage(customText) {
@@ -244,11 +244,11 @@ export default function App() {
 
   function joinWaitlist() {
     if (!email.trim()) return;
-    const subject = encodeURIComponent("UniPay early access request");
+    const subject = encodeURIComponent("Credible early access request");
     const body = encodeURIComponent(
-      `Hi UniPay team,\n\nI would like to join the UniPay early access waitlist.\n\nMy email: ${email}\n\nThank you!`
+      `Hi Credible team,\n\nI would like to join the Credible early access waitlist.\n\nMy email: ${email}\n\nThank you!`
     );
-    window.location.href = `mailto:hello@unipay.app?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:hello@Credible.app?subject=${subject}&body=${body}`;
     setJoined(true);
   }
 
@@ -1219,7 +1219,7 @@ export default function App() {
           <div className="brand">
             <div className="logo">UP</div>
             <div>
-              <div className="brand-name">UniPay</div>
+              <div className="brand-name">Credible</div>
               <div className="brand-sub">Free student finance app</div>
             </div>
           </div>
@@ -1251,7 +1251,7 @@ export default function App() {
 
             <div className="hero-note">
               International students often manage tuition, rent, transfers,
-              documents, and credit-building across different systems. UniPay brings
+              documents, and credit-building across different systems. Credible brings
               everything into one free student finance workspace.
             </div>
 
@@ -1292,7 +1292,7 @@ export default function App() {
               <small>AI RECOMMENDATION</small>
               <h3>Compare routes before sending money.</h3>
               <p>
-                UniPay helps students avoid hidden costs and missing payment records.
+                Credible helps students avoid hidden costs and missing payment records.
               </p>
             </div>
           </div>
@@ -1529,7 +1529,7 @@ export default function App() {
             <div className="section-label">All nationalities from day one</div>
             <h2>We speak your financial language.</h2>
             <p className="section-text">
-              UniPay supports students and family payment records from many international corridors.
+              Credible supports students and family payment records from many international corridors.
             </p>
           </div>
 
@@ -1550,7 +1550,7 @@ export default function App() {
             <div className="section-label">VisibleSend</div>
             <h2>How much can your family save?</h2>
             <p className="section-text">
-              This calculator is only a demo. UniPay is free for students and helps compare routes before sending money.
+              This calculator is only a demo. Credible is free for students and helps compare routes before sending money.
             </p>
           </div>
 
@@ -1613,7 +1613,7 @@ export default function App() {
 
             <div className="fee-row best">
               <div>
-                <div className="fee-name">UniPay route check</div>
+                <div className="fee-name">Credible route check</div>
                 <div className="corridor-note">Free comparison layer for students and families.</div>
               </div>
               <div className="fee-price cyan">Free</div>
@@ -1642,7 +1642,7 @@ export default function App() {
 
           <div className="demo-shell">
             <div className="demo-top">
-              <span>app.unipay.com / {currentDemo.title.toLowerCase().replaceAll(" ", "-")}</span>
+              <span>app.Credible.com / {currentDemo.title.toLowerCase().replaceAll(" ", "-")}</span>
               <span style={{ color: "#00a676" }}>● 4 accounts synced</span>
             </div>
 
@@ -1709,7 +1709,7 @@ export default function App() {
           <div className="coach-wrap">
             <div className="coach-profile">
               <div className="card-title">PROFILE</div>
-              <h3>UniPay Student</h3>
+              <h3>Credible Student</h3>
               <p>International student · Boston</p>
               <div className="coach-score">{score}</div>
               <p>Wellness score / 850</p>
@@ -1809,7 +1809,7 @@ export default function App() {
           <div className="section-label">Boston launch — 2026</div>
 
           <h2>
-            Join the waitlist. <span className="gradient">UniPay is free.</span>
+            Join the waitlist. <span className="gradient">Credible is free.</span>
           </h2>
 
           <p className="section-text">
@@ -1834,7 +1834,7 @@ export default function App() {
         </section>
 
         <footer className="footer">
-          <div>© 2026 UniPay. All rights reserved.</div>
+          <div>© 2026 Credible. All rights reserved.</div>
           <div>Built for international students and families.</div>
         </footer>
       </div>
