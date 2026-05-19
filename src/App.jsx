@@ -1216,13 +1216,14 @@ export default function App() {
 
       <div className="page">
         <nav className="nav">
+
           <div className="brand">
-            <div className="logo">UP</div>
-            <div>
-              <div className="brand-name">Credible</div>
-              <div className="brand-sub">Trust. Integrity. Clarity.</div>
-            </div>
-          </div>
+  <img src={logo} alt="Credible logo" className="brand-logo" />
+  <div>
+    <div className="brand-name">Credible</div>
+    <div className="brand-tagline">TRUST. INTEGRITY. CLARITY.</div>
+  </div>
+</div>
 
           <div className="links">
             <a href="#how">How it works</a>
